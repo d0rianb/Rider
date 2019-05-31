@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="./dist/img/project-icon.png" />
+  <link rel="stylesheet" src="./dist/main.css">
+
+  <title>Rider</title>
+</head>
+
+<body>
+
+
+  <div class="infos">
+    <ul>
+      <li>Score : <span class="score">{{ SCORE }}</span></li>
+      <li>FrameRate : <span class="framerate">{{ FRAMERATE }}</span></li>
+    </ul>
+  </div>
+
+  <div class="help">
+    <ul>
+      <li><span class="shortcut">Space</span> : Move Forward</li>
+      <li><span class="shortcut">Maj + Space</span> : Move Backward</li>
+      <li><span class="shortcut">Enter</span> : Generate Triangle</li>
+      <li><span class="shortcut">Left Arrow</span> : Rotate Left</li>
+      <li><span class="shortcut">Right Arrow</span> : Rotate Right</li>
+      <li><span class="shortcut">Q, D</span> : Move Camera Horizontally (just at the beginning)</li>
+      <li><span class="shortcut">Z, S</span> : Move Camera Vertically</li>
+      <li><span class="shortcut">P, M</span> : Zoom / Dezoom Camera</li>
+      <li><span class="shortcut">R</span> : Reset View</li>
+      <li><span class="shortcut">H</span> : Display Help</li>
+      <li><span class="shortcut">B</span> : Debug Mode</li>
+    </ul>
+    <div class="debug">
+      <input type="checkbox" id="debug" value="false" tabindex="-1" />
+      <label for="debug">Debug</label>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="./dist/rider.bundle.js"></script>
+  <script type="text/javascript">
+    // Script Google Analytics
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-86667938-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>

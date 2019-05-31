@@ -1,0 +1,14 @@
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 316.82 315.86">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <title>triangle3</title>
+  <polygon class="cls-1" points="4.78 309.74 149.78 12.74 151.78 229.74 304.78 312.74 4.78 309.74"/>
+</svg>

@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-smooth: always;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.infos {
+  position: absolute;
+  top: 0.25em;
+  left: 1em;
+  color: #666;
+}
+
+.help {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  top: 0.25em;
+  right: 1em;
+  width: 20%;
+  color: #666;
+  opacity: 0;
+  transition: opacity ease 10ms;
+
+  button {
+    -webkit-appearance: none;
+    padding: 0.25em 0.5em;
+    border: none;
+    color: #ccc;
+  }
+}
+
+.debug {
+  text-align: center;
+}
+
+.shortcut {
+  font-weight: 600;
+  text-transform: uppercase;
+}
